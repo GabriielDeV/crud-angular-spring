@@ -1,0 +1,27 @@
+.full-width{
+  width: 100%;
+}
+
+.cabecalho{
+  background-color: #E91E63;
+  color: white;
+}
+
+.bnt-acoes{
+  display: flex;
+  justify-content: center;
+
+  button{
+   margin-right: 10px;
+  }
+}
+
+mat-card-content{
+  padding: 10px;
+}
+
+mat-card{
+  max-width: 80%;
+  margin: 2em auto;
+}
+

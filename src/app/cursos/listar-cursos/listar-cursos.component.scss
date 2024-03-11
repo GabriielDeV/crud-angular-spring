@@ -1,0 +1,17 @@
+.tabela{
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.coluna-acoes{
+  flex: 0 0 150px;
+  button{
+    margin-right: 5px;
+  }
+}
+
+.coluna-acoes-header{
+  flex: 0 0 130px;
+  align-items: center;
+
+}

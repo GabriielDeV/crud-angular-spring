@@ -1,0 +1,24 @@
+<mat-card>
+  <div>
+    <mat-toolbar class="toolbar-cursos">
+      <span class="texto">CURSOS</span>
+    </mat-toolbar>
+  </div>
+
+  <div class="colun-flex mat-elevation-z8">
+  <app-listar-cursos
+  *ngIf="cursos$ | async as cursos; else carregar"
+  [cursos]="cursos"
+  (add)="adicionarCurso()"
+  (editar)="editarCurso($event)"
+  (deletar)="deletarCurso($event)"
+  ></app-listar-cursos>
+
+
+  <ng-template #carregar>
+    <div class="carregar">
+      <mat-spinner></mat-spinner>
+    </div>
+  </ng-template>
+</div>
+</mat-card>
